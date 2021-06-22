@@ -1,0 +1,33 @@
+ALGORITHM CHECKPOINT_LINEAR_DATA_STRUCTURE
+
+VAR
+    i,j,k: INTEGER;
+    SET1:array_of_integer;
+    SET2:array_of_integer;
+    sum_common: INTEGER:=0;
+    
+BEGIN {
+	read(SET1);
+	read(SET2);
+for i from 0 to SET1.length-1 do 
+	WHILE ( j<SET2.length-1) && (A1[i] <> B1[j])
+		sum_common:=sum_common+SET1[i]
+		j++;
+	END_WHILE
+END_FOR
+
+
+for i from 0 to SET2.length-1 do 
+	WHILE ( j<SET1.length-1) && (SET1[i] <> SET2[j])
+		sum_common:=sum_common+SET2[i]
+		j++;
+	END_WHILE
+END_FOR
+
+}
+end
+
+
+
+
+		

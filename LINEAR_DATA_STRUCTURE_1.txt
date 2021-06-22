@@ -1,0 +1,22 @@
+ALGORITHM CHECKPOINT_LINEAR_DATA_STRUCTURE
+
+VAR
+    i,j,k: INTEGER;
+    A1:array_of_integer;
+    B1:array_of_integer;
+    sum_common: INTEGER:=0;
+    sum_different: INTEGER:=0;
+BEGIN {
+	read(A1);
+	read(A2);
+for i from 0 to A1.length-1 do 
+	WHILE ( j<B1.length-1) && (A1[i] <> B1[j])
+	sum_different++;
+	j++;
+	END_WHILE;
+		WHILE ( j<B1.length-1) && (A1[i] == B1[j])
+     		sum_common:= sum_cummon +A1[i]+B1[j] ;
+		j++;
+		END_WHILE;
+		
+	END
